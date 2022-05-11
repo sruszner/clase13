@@ -9,6 +9,11 @@ let numdos;
 function ingresar(){
     numuno = document.getElementById(`numuno`).value;
     numdos = document.getElementById(`numdos`).value;
+
+    if(numuno==0 || numdos==0){
+        alert("Error - No ingresaste los números");
+        location.href = (`../index.html`);
+    }
 }
 
 function sumar(){
